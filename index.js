@@ -7,13 +7,13 @@ const Bot = new twit({
   consumer_secret: process.env.API_SECRET_KEY,
   access_token: process.env.ACCESS_TOKEN,
   access_token_secret: process.env.ACCESS_TOKEN_SECRET,
-  timeout_ms: 10 * 1000,
+  timeout_ms: 60 * 1000,
 });
 
 function BotInit() {
   var query = {
     //Aqui vai o que você quer buscar
-    q: "Thaciano",
+    q: "thaciano",
     result_type: "recent",
   };
   // Este método busca os tweets mais recentes baseado na sua query
