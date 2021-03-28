@@ -2,7 +2,10 @@
   "name": "twitter-bot",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/SylvioMigliorucci/twitter-bot.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SylvioMigliorucci/twitter-bot.git"
+  },
   "author": "sylvio <sylvio.migliorucci@gmail.com>",
   "license": "MIT",
   "dependencies": {
@@ -11,11 +14,15 @@
     "twit": "^2.2.11"
   },
   "scripts": {
-    "postinstall": "npm run build",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
     "node": "15.12.0"
-  }
+  },
+  "description": "",
+  "bugs": {
+    "url": "https://github.com/SylvioMigliorucci/twitter-bot/issues"
+  },
+  "homepage": "https://github.com/SylvioMigliorucci/twitter-bot#readme"
 }
