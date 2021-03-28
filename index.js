@@ -1,3 +1,6 @@
+
+.listen(process.env.PORT || 5000);
+
 var twit = require('twit');
 
 require("dotenv").config();
