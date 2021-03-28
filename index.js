@@ -7,7 +7,7 @@ const Bot = new twit({
   consumer_secret: process.env.API_SECRET_KEY,
   access_token: process.env.ACCESS_TOKEN,
   access_token_secret: process.env.ACCESS_TOKEN_SECRET,
-  timeout_ms: 60 * 1000,
+  timeout_ms: 50 * 1000,
 });
 
 function BotInit() {
@@ -40,5 +40,5 @@ function BotInit() {
   }
 }
 
-setInterval(BotInit, 1 * 60 * 1000);
+setInterval(BotInit, 0,5 * 60 * 1000);
 BotInit();
