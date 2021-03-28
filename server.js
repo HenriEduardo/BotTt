@@ -8,6 +8,7 @@ app.use(express.static(__dirname + '/bot-twitter'));
 
 app.get('/*', (req, res) => {
     res.sendFile(__dirname + '/bot-twitter/index.js');
+    res.sendFile(__dirname + '/bot-twitter/index.html');
 });
 
 app.listen(PORT, () =>{
