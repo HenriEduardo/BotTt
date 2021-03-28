@@ -10,6 +10,7 @@
     "twit": "^2.2.11"
   },
   "scripts": {
+    "postinstall": "npm run build",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
