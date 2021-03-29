@@ -1,3 +1,8 @@
+const PORT = process.env.PORT || 3000;
+index.listen(PORT, () => {
+    console.log(`App is running on port ${ PORT }`);
+});
+
 var twit = require('twit');
 
 require("dotenv").config();
